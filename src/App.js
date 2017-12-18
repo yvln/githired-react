@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Redirect } from "react-router-dom";
 
-import '../App.css';
+import './App.css';
 import axios from 'axios';
-import Cookies from '../helpers/Cookies';
+import Cookies from './helpers/Cookies';
 
-import UserAuth from './UserAuth';
-import Content from './Content';
-import Header from './Header';
-import ViewOne from './ViewOne';
-import CreateJob from './CreateJob';
+import UserAuth from './components/UserAuth';
+import Content from './components/Content';
+import Header from './components/Header';
+import ViewOne from './components/ViewOne';
+import CreateJob from './components/CreateJob';
 
 
 class App extends Component {
