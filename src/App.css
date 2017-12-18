@@ -1,0 +1,644 @@
+body {
+  margin: 0;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+/********************************************** Login/SignUp Page *************************************/
+
+section {
+  filter: blur(0px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.loginBackground {
+  background: url('./hallway.jpg');
+  height: 100vh;
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size: cover;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  filter: blur(3px);
+}
+
+.auth-form {
+  filter: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 30%;
+  width: 25%;
+  border-radius: 8px;
+  background-color: #eeede3;
+  box-shadow: 2px 2px 30px 0 rgba(0, 0, 0, 0.5);
+  opacity: 0.95;
+}
+
+.signUp-auth-form{
+  filter: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 43%;
+  width: 25%;
+  border-radius: 8px;
+  background-color: #eeede3;
+  box-shadow: 2px 2px 30px 0 rgba(0, 0, 0, 0.5);
+  opacity: 0.95;
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin: -5%;
+}
+
+.signUpForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+}
+
+.loginForm>.searchBar {
+  width: 60%;
+}
+
+.signUpForm>.searchBar {
+  width: 60%;
+}
+
+.signUpForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  justify-content: space-around;
+}
+
+.form-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form-button {
+  background-image: linear-gradient(to bottom, #f2f2f2, #d4d4d4);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), inset 0 2px 0 0 #ffffff;
+  border: solid 1px #979797;
+  margin-top: 20%;
+}
+
+.signup-form-button {
+  background-image: linear-gradient(to bottom, #f2f2f2 , #d4d4d4 );
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), inset 0 2px 0 0 #ffffff ;
+  border: solid 1px #979797 ;
+  margin-top: 5%;
+}
+
+.login-form-button, .signup-form-button:hover {
+  cursor: pointer;
+}
+
+.loginHead {
+  font-family: 'Inconsolata', monospace;
+}
+
+.signUp-auth-form>.loginHead {
+  font-size: 12px;
+}
+
+/********************************************** Header *************************************/
+
+.header {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  color: white;
+  background: #3F667F;
+  /*position: fixed;*/
+}
+
+.appName {
+  font-size: 36px;
+  font-family: 'Inconsolata', monospace;
+  padding-left: 2%;
+}
+
+.username {
+  font-size: 28px;
+  padding-left: 2%;
+  padding-bottom: 2%;
+  /*border-bottom: 2px solid white;*/
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-top: 2px solid white;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  background: #617B7F;
+}
+
+.navLink {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.navLink:hover {
+  cursor: pointer;
+}
+
+/********************************************** Search Form *************************************/
+
+.searchView{
+  margin-top: 2%;
+  margin-bottom: 2%;
+  display: flex;
+  justify-content: center;
+}
+
+.searchForm {
+  width: 85%;
+  background-color: #fbf8f8;
+  border: solid 1px #979797;
+  padding: 1%;
+}
+
+.searchInputs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /*justify-content: space-between;*/
+}
+
+.searchInputs>div {
+  width: 20%;
+  padding: 1%;
+}
+
+.searchTitle {
+  font-size: 2.5vw;
+  flex: 1;
+}
+
+.searchBar {
+  flex: 2;
+  height: 35%;
+  width: 100%;
+  font-size: 100%;
+  border-radius: 3px;
+  background-color: #ffffff;
+  box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.5);
+  border: solid 1px #979797;
+}
+
+.select-values {
+  flex: 1;
+  font-size: 100%;
+  width: 100%;
+  height: 35%;
+  border-radius: 3px;
+  background-image: linear-gradient(to bottom, #f2f2f2, #d4d4d4);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), inset 0 2px 0 0 #ffffff;
+  border: solid 1px #979797;
+}
+
+.submitButton {
+  width: 90%;
+  height: 35%;
+  margin-top: 20px;
+  font-size: 100%;
+  border-radius: 3px;
+  background-image: linear-gradient(to bottom, #f2f2f2, #d4d4d4);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), inset 0 2px 0 0 #ffffff;
+  border: solid 1px #979797;
+}
+
+.divSearchBar {
+  display: flex;
+  flex-direction: column;
+}
+
+
+/********************************************** Saved Data Table *************************************/
+
+.viewSavedData{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2%;
+  width: 100%;
+}
+
+#myTable {
+  width: 85%;
+}
+
+
+img {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+table {
+    font-family: 'Lato', sans-serif;
+    border-collapse: collapse;
+    width: 70%;
+    box-sizing: border-box;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+tr, th, td {
+    text-align: center;
+}
+
+.saveRow {
+  border-bottom: 4px solid white;
+}
+
+.delete:hover {
+  background-color: #E63946;
+  cursor: default;
+  color: white;
+  cursor: pointer;
+}
+
+th[role=columnheader]:not(.no-sort) {
+  cursor: pointer;
+  border-bottom: 4px solid white;
+}
+
+th[role=columnheader]:not(.no-sort):after {
+  content: '';
+  margin-top: .8em;
+  float: right;
+  border-width: 0 .5em .5em;
+  border-style: solid;
+  border-color: #404040 transparent;
+  visibility: hidden;
+  opacity: 0;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+th[aria-sort=ascending]:not(.no-sort):after {
+  border-bottom: none;
+  border-width: .5em .5em 0;
+}
+
+th[aria-sort]:not(.no-sort):after {
+  visibility: visible;
+  opacity: 0.4;
+}
+
+th[role=columnheader]:not(.no-sort):hover:after {
+  visibility: visible;
+  opacity: 1;
+}
+
+th {
+  background: #3F667F;
+  color: white;
+  font-size: 1em;
+  padding: .8em;
+}
+
+td {
+  background: #EAEFF6;
+  padding: .5em;
+
+}
+
+/********************************************** Search Results *************************************/
+
+.viewResults {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.resultBox {
+  padding: 12px;
+  border-bottom: 10%;
+  width: 55%;
+  height: 20%;
+  margin-bottom: 2%;
+  border-radius: 8px;
+  background-color: #eeede3;
+  box-shadow: 2px 2px 30px 0 rgba(0, 0, 0, 0.5);
+  border: solid 1px #000000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.jobDesc {
+  display: none;
+}
+
+.jobDescHead {
+  padding-bottom: 2%;
+}
+
+/*.jobDesc {
+  height: 20%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}*/
+
+.resultsHead {
+  padding-bottom: 1%;
+  box-shadow: inset 0 0px 0 white, inset 0 -5px 0 black;
+  display: flex;
+  justify-content: space-around;
+  margin: 2%;
+  font-size: 22px;
+}
+
+.resultsTable {
+  padding-bottom: 2%;
+}
+
+.resultsTable>img {
+  height: 4em;
+  width: 4em;
+}
+
+.saveJob:hover {
+  cursor: pointer;
+}
+
+
+.linkResults {
+  margin-left: 7%;
+  text-decoration: none;
+}
+
+.seeDesc{
+  text-decoration: none;
+  z-index: 2;
+  background: -webkit-linear-gradient(rgba(255,255,255,0), rgba(255,255,255,1)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(rgba(255,255,255,0), rgba(255,255,255,1)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(rgba(255,255,255,0), rgba(255,255,255,1)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,1)); /* Standard syntax */
+  position: absolute;
+  bottom: 10px;
+  width: 96%;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.seeDesc:hover{
+  cursor: pointer;
+}
+
+.shortDescription {
+  max-height: 140px;
+  overflow: hidden;
+  cursor: pointer;
+  text-overflow: ellipsis;
+}
+
+.longDescription {
+  height: 100%;
+  overflow: auto;
+  cursor: pointer;
+
+}
+
+/********************************************** Create Page *************************************/
+
+.createForm {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  background: #EAEFF6;
+}
+
+.createForm div {
+  padding: 2%;
+}
+
+.jobInformation {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactInformation {
+  display: flex;
+  flex-direction: column;
+  padding-left: 50px;
+  height: 100%;
+}
+
+.jobsContinued {
+  margin-top:  7%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 50px;
+  height: 100%;
+}
+
+.makejob {
+  height: 100vh;
+}
+
+label {
+  font-size: 1em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+.createInput {
+  width: 100%;
+  height: 2vh;
+  margin: 1em;
+  border: none;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.createSelect {
+  width: 100%;
+  height: 3vh;
+  margin-top: 2%;
+  margin-left: 5%;
+}
+
+.submitButtonCreate {
+  width: 50%;
+  height: 35%;
+  font-size: 100%;
+  border-radius: 3px;
+  background-image: linear-gradient(to bottom, #f2f2f2, #d4d4d4);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), inset 0 2px 0 0 #ffffff;
+  border: solid 1px #979797;
+}
+
+.divSubmitButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.notesCreate {
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  margin-left: 5%;
+}
+
+/********************************************** View One Page *************************************/
+
+
+.oneJobView {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ViewOne {
+  padding: 1%;
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  border-bottom: 10%;
+  width: 55%;
+  height: 20%;
+  margin-bottom: 2%;
+  border-radius: 8px;
+  background-color: #eeede3;
+  box-shadow: 2px 2px 30px 0 rgba(0, 0, 0, 0.5);
+  border: solid 1px #000000;
+}
+
+.ViewOne div {
+  padding: .5%;
+}
+
+.ViewOne button {
+  margin-top: 1%;
+  margin-bottom: 2%;
+}
+
+.viewOneButtons {
+  display: flex;
+  flex-direction: row;
+  margin-left: 2%;
+}
+
+.resultsData {
+  margin-left: 2%;
+  width: 90%;
+}
+
+.link {
+  margin-left: 2%;
+  text-decoration: none;
+}
+
+
+.ViewOne input {
+  width: 100%;
+}
+
+
+.note {
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  width: 99%;
+  padding: 10px 0;
+}
+
+.bigContainerJobInfo {
+  width: 97%;
+}
+
+.boxViewOne {
+  display: flex;
+  flex-direction: column;
+  width: 99%;
+  padding: 10px 0;
+}
+
+.boxInlineViewOne {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  padding: 10px 0;
+}
+
+.boxInlineViewOne input {
+  width: auto;
+}
+
+.viewOneButtons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+}
+
+.submitButtonEdit{
+  margin: 15px 0;
+  width: 120px;
+  height: 35%;
+  border-radius: 3px;
+  background-image: linear-gradient(to bottom, #f2f2f2, #d4d4d4);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), inset 0 2px 0 0 #ffffff;
+  border: solid 1px #979797;
+}
+
+.lastEdited {
+  font-size: 14px;
+  color: grey;
+  text-align: right;
+  font-style: italic;
+  width: 100%;
+  margin: 0 -12px;
+}
+
+.submitButtonSave {
+  margin: 15px 0;
+  width: 120px;
+  height: 35%;
+  border-radius: 3px;
+  background-image: linear-gradient(to bottom, #f2f2f2, #d4d4d4);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), inset 0 2px 0 0 #ffffff;
+  border: solid 1px #979797;
+}
+
+.divSubmitButtonSave {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
