@@ -223,7 +223,7 @@ class CreateJob extends Component {
 						</div>
 
 						<div className="divSubmitButton">
-							<input className="submitButtonCreate" type="submit" value="Submit"/>
+							<input className="button" type="submit" value="Submit"/>
 						</div>
 
 						</div>

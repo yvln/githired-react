@@ -11,7 +11,6 @@ import Header from './components/Header';
 import ViewOne from './components/ViewOne';
 import CreateJob from './components/CreateJob';
 
-
 class App extends Component {
   constructor(){
     super();

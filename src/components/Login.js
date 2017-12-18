@@ -38,32 +38,36 @@ class Login extends Component {
   render(){
     return(
       <div>
-      <div className='loginBackground'>
-      </div>
-      <section>
-      <div className="auth-form">
-        <div className='loginHead'><h1>GitHired</h1></div>
         
-        <form className='loginForm' onSubmit={this.login.bind(this)}>
-          <label htmlFor='email'>Email:</label>
-          <input className='searchBar' value={this.state.inputs.email}
-            id='email' name='email' type='email'
-            onChange={e => this.changeInput(e, 'email')}
-          />
+        <div className='loginBackground'></div>
+      
+        <section>
+          <div className="auth-container">
+          
+            <h1 className='auth-title'>GitHired</h1>
+            
+            <form className='auth-form login' onSubmit={this.login.bind(this)}>
+                <label htmlFor='email'>Email:</label>
+                <input value={this.state.inputs.email}
+                  id='email' name='email' type='email'
+                  onChange={e => this.changeInput(e, 'email')}
+                />
 
-          <label htmlFor='password'>Password:</label>
-          <input className='searchBar' value={this.state.inputs.password}
-            id='password' name='password' type='password'
-            onChange={e => this.changeInput(e, 'password')}
-          />
+                <label htmlFor='password'>Password:</label>
+                <input value={this.state.inputs.password}
+                  id='password' name='password' type='password'
+                  onChange={e => this.changeInput(e, 'password')}
+                />
 
-          <div className="form-buttons">
-            <button type="submit" className="login-form-button">Log In</button>
-            <button onClick={this.props.toggleMode} className="login-form-button">Sign Up</button>
+                <div className="auth-form-buttons">
+                  <button type="submit" className="auth-button button">Log In</button>
+                  <button onClick={this.props.toggleMode} className="auth-button button">Sign Up</button>
+                </div>
+            </form>
+            
           </div>
-        </form>
-      </div>
-      </section>
+        </section>
+        
       </div>
     )
   }

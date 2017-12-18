@@ -1,19 +1,23 @@
-import React, {Component} from 'react';
-import { Link } from 'react-router-dom';
+import React, {Component} from "react";
+import { Link } from "react-router-dom";
 
 class Header extends Component {
 
  render() {
     return (
-      <div className='header'>
-      <div className='logo'>
-        <h1 className='appName'>GitHired</h1>
-        <div className='username'><em>{this.props.user.first_name} {this.props.user.last_name}</em></div>
+      <div className="header">
+        <div className="header-identity">
+          <div className="header-left">
+            <h1 className="header-title">GitHired</h1>
+          </div>
+          <div className="header-right">
+            <div className="header-username">{this.props.user.first_name} {this.props.user.last_name}</div>
+            <div className="header-logout" onClick={this.props.logout}>LOG OUT</div>
+          </div>
         </div>
-        <div className='links'>
-          <Link className='navLink' to='/'>View Saved Jobs</Link>
-          <Link className='navLink' to='/create'>Add New Job</Link>
-          <span className='navLink' onClick={this.props.logout}>Log Out</span>
+        <div className="header-nav">
+          <Link className="navLink" to="/">VIEW SAVED JOBS</Link>
+          <Link className="navLink" to="/create">ADD NEW JOB</Link>
         </div>
       </div>
     )

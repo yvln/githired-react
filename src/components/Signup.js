@@ -41,53 +41,55 @@ class SignUp extends Component {
   render(){
     return(
       <div>
-      <section>
-      <div className='loginBackground'>
-      </div>
-      <div className="signUp-auth-form">
-        <div className='loginHead'><h1>GitHired</h1></div>
+      
+        <div className='loginBackground'></div>
+        
+        <section>
+          <div className="auth-container">
+          
+            <h1 className='auth-title'>GitHired</h1>
 
-        <form className='signUpForm' onSubmit={this.signUp.bind(this)}>
+            <form className='auth-form signup' onSubmit={this.signUp.bind(this)}>
 
-          <label htmlFor='email'>First Name</label>
-          <input className='searchBar'value={this.state.inputs.first_name}
-            id='first_name' name='first_name' type='text'
-            onChange={e => this.changeInput(e, 'first_name')}
-          />
+                <label htmlFor='first_name'>First Name</label>
+                <input value={this.state.inputs.first_name}
+                  id='first_name' name='first_name' type='text'
+                  onChange={e => this.changeInput(e, 'first_name')}
+                />
 
-          <label htmlFor='email'>Last Name</label>
-          <input className='searchBar' value={this.state.inputs.last_name}
-            id='last_name' name='last_name' type='text'
-            onChange={e => this.changeInput(e, 'last_name')}
-          />
+                <label htmlFor='last_name'>Last Name</label>
+                <input value={this.state.inputs.last_name}
+                  id='last_name' name='last_name' type='text'
+                  onChange={e => this.changeInput(e, 'last_name')}
+                />
 
-          <label htmlFor='email'>Email</label>
-          <input className='searchBar' value={this.state.inputs.email}
-            id='email' name='email' type='email'
-            onChange={e => this.changeInput(e, 'email')}
-          />
+                <label htmlFor='email'>Email</label>
+                <input value={this.state.inputs.email}
+                  id='email' name='email' type='email'
+                  onChange={e => this.changeInput(e, 'email')}
+                />
 
-          <label htmlFor='password'>Password</label>
-          <input className='searchBar' value={this.state.inputs.password}
-            id='password' name='password' type='password'
-            onChange={e => this.changeInput(e, 'password')}
-          />
+                <label htmlFor='password'>Password</label>
+                <input value={this.state.inputs.password}
+                  id='password' name='password' type='password'
+                  onChange={e => this.changeInput(e, 'password')}
+                />
 
-          <label htmlFor='password_confirmation'>Password Confirmation</label>
-          <input className='searchBar' value={this.state.inputs.password_confirmation}
-            id='password_confirmation'
-            name='password_confirmation' type='password'
-            onChange={e => this.changeInput(e, 'password_confirmation')}
-          />
+                <label htmlFor='password_confirmation'>Password Confirmation</label>
+                <input value={this.state.inputs.password_confirmation}
+                  id='password_confirmation'
+                  name='password_confirmation' type='password'
+                  onChange={e => this.changeInput(e, 'password_confirmation')}
+                />
 
-          <div className="signUp-form-buttons">
-            <button type="submit" className="signup-form-button">Sign Up</button>
-            <button onClick={this.props.toggleMode} className="signup-form-button">Back to Log In</button>
+                <div className="auth-form-buttons">
+                  <button type="submit" className="auth-button button">Sign Up</button>
+                  <button onClick={this.props.toggleMode} className="auth-button button">Back to Log In</button>
+                </div>
+
+            </form>
           </div>
-
-        </form>
-      </div>
-      </section>
+        </section>
       </div>
     )
   }

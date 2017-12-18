@@ -109,7 +109,7 @@ class ViewResults extends Component {
 
           <div className='resultBox' key={e.job_id}>
             <div className='resultsHead'>
-              <div>{e.title}, {e.company}, {e.type}</div>
+              {e.title}, {e.company}, {e.type}
             </div>
             <div class='resultsTable'>
                <thead>
@@ -135,14 +135,14 @@ class ViewResults extends Component {
 
             <div className='resultDescription'>
             {this.state.mode === "shortDesc" &&
-              <div>
-                <div className='shortDescription' dangerouslySetInnerHTML={{ __html: `Description: ${e.description}` }} />
+              <div className='descAPI'>
+                <div className='shortDescription' dangerouslySetInnerHTML={{ __html: `${e.description}` }} />
                 <div className='seeDesc' onClick={this.toggleDesc}>...</div>
               </div>
             }
             {this.state.mode === "longDesc" &&
-              <div>
-                <div className='longDescription' dangerouslySetInnerHTML={{ __html: `Description: ${e.description}` }} />
+              <div className='descAPI'>
+                <div className='longDescription' dangerouslySetInnerHTML={{ __html: `${e.description}` }} />
                 <div className='seeDesc' onClick={this.toggleDesc}>^</div>
               </div>
             }
